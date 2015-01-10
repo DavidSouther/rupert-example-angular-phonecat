@@ -1,0 +1,32 @@
+{
+  "main": "app.js",
+  "scripts": {
+    "start": "node ./app.js",
+    "test": "grunt",
+    "features": "grunt features",
+    "watch": "grunt watcher"
+  },
+  "dependencies": {
+    "rupert": "^0.3.1",
+    "rupert-plugin-angular": "^0.1.1",
+    "rupert-plugin-bootstrap": "^0.1.1"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "rupert-grunt": "^0.1.1"
+  },
+  "name": "rupert-example-angular-phonecat",
+  "description": "An example of how to build the Angular Phonecat project using RupertJS.",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RupertJS/rupert-example-angular-phonecat.git"
+  },
+  "author": "David Souther <davidsouther@gmail.com> (https://davidsouther.com/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RupertJS/rupert-example-angular-phonecat/issues"
+  },
+  "homepage": "https://github.com/RupertJS/rupert-example-angular-phonecat"
+}
