@@ -1,3 +1,4 @@
 angular.module('phonecat', [
-  'main.template'
+  'main.template',
+  'phonecat.phones.controller'
 ]);
