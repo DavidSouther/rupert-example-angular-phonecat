@@ -1,8 +1,20 @@
-<div ng-controller="PhoneController as state">
-  <ul>
-    <li ng-repeat="phone in state.phones">
-      <span>{{phone.name}}</span>
-      <p>{{phone.snippet}}</p>
-    </li>
-  </ul>
+<div class="container-fluid" ng-controller="PhoneController as state">
+  <div class="row">
+    <div class="col-md-2">
+      <form>
+        <div class="form-group">
+          <label for="search">Search</label>
+          <input type="search" name="search" class="form-control" ng-model="state.query">
+        </div>
+      </form>
+    </div>
+    <div class="col-md-10">
+      <ul class="phones">
+        <li class="phone" ng-repeat="phone in state.phones | filter:state.query">
+          {{ phone.name }}
+          <p>{{ phone.snippet }}</p>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>

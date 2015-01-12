@@ -1,3 +1,4 @@
 module.exports = {
-  'ubiquitous language component': '#selector .forComponent',
+  'search filter': 'search',
+  'phonelist': '.phones .phone'
 };
